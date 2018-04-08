@@ -1,0 +1,132 @@
+{
+    "tests": [
+        {
+            "result": "E",
+            "description": "Produces good results when running the network on full data",
+            "rubric_item_id": 7965,
+            "traceback": "Traceback (most recent call last):\n  File \"/home/grader/first_neural_network/workspace/my_answers.py\", line 53, in train\n    self.update_weights(delta_weights_i_h, delta_weights_h_o, n_records)\n  File \"/home/grader/first_neural_network/workspace/my_answers.py\", line 119, in update_weights\n    self.weights_hidden_to_output += self.lr*delta_weights_h_o/self.n_records\nAttributeError: 'NeuralNetwork' object has no attribute 'n_records'\n"
+        },
+        {
+            "result": "E",
+            "description": "The weights are updated correctly on training",
+            "rubric_item_id": 5570,
+            "traceback": "Traceback (most recent call last):\n  File \"/home/grader/first_neural_network/workspace/my_answers.py\", line 53, in train\n    self.update_weights(delta_weights_i_h, delta_weights_h_o, n_records)\n  File \"/home/grader/first_neural_network/workspace/my_answers.py\", line 119, in update_weights\n    self.weights_hidden_to_output += self.lr*delta_weights_h_o/self.n_records\nAttributeError: 'NeuralNetwork' object has no attribute 'n_records'\n"
+        },
+        {
+            "result": "E",
+            "description": "The update_weights implementation is correct",
+            "rubric_item_id": 5580,
+            "traceback": "Traceback (most recent call last):\n  File \"/home/grader/first_neural_network/workspace/my_answers.py\", line 119, in update_weights\n    self.weights_hidden_to_output += self.lr*delta_weights_h_o/self.n_records\nAttributeError: 'CorrectNeuralNetwork' object has no attribute 'n_records'\n"
+        },
+        {
+            "result": ".",
+            "description": "The activation function is a sigmoid",
+            "rubric_item_id": 5574,
+            "traceback": ""
+        },
+        {
+            "result": ".",
+            "description": "The backpropagation implementation is correct",
+            "rubric_item_id": 5578,
+            "traceback": ""
+        },
+        {
+            "result": ".",
+            "description": "The number of epochs is reasonable",
+            "rubric_item_id": 5575,
+            "traceback": ""
+        },
+        {
+            "result": ".",
+            "description": "The forward pass implementation is correct",
+            "rubric_item_id": 5572,
+            "traceback": ""
+        },
+        {
+            "result": ".",
+            "description": "The number of hidden nodes is reasonable",
+            "rubric_item_id": 5581,
+            "traceback": ""
+        },
+        {
+            "result": ".",
+            "description": "The learning_rate is reasonable",
+            "rubric_item_id": 5582,
+            "traceback": ""
+        },
+        {
+            "result": ".",
+            "description": "The number of output nodes is correct",
+            "rubric_item_id": 7964,
+            "traceback": ""
+        },
+        {
+            "result": ".",
+            "description": "The run method is correct",
+            "rubric_item_id": 5573,
+            "traceback": ""
+        }
+    ],
+    "critiques": {
+        "700": {
+            "general_comment": null,
+            "rubric_items": {
+                "5575": {
+                    "result": "passed",
+                    "autograded": false,
+                    "observation": "Correct!"
+                },
+                "7964": {
+                    "result": "passed",
+                    "autograded": false,
+                    "observation": "Correct!"
+                },
+                "5582": {
+                    "result": "passed",
+                    "autograded": false,
+                    "observation": "Correct!"
+                },
+                "5572": {
+                    "result": "passed",
+                    "autograded": false,
+                    "observation": "Correct!"
+                },
+                "5578": {
+                    "result": "passed",
+                    "autograded": false,
+                    "observation": "Correct!"
+                },
+                "5580": {
+                    "result": "failed",
+                    "autograded": false,
+                    "observation": "```\nNot all of the tests passed.\n\n\n************************************************************************\n                         Test Failure Feedback                          \n************************************************************************\n\nFailed Test: The update_weights implementation is correct\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/grader/first_neural_network/workspace/my_answers.py\", line 119, in update_weights\n    self.weights_hidden_to_output += self.lr*delta_weights_h_o/self.n_records\nAttributeError: 'CorrectNeuralNetwork' object has no attribute 'n_records'\n\n\n************************************************************************\n                          Test Result Summary                           \n************************************************************************\n\nThe update_weights implementation is correct                           E\n\n\n```"
+                },
+                "5574": {
+                    "result": "passed",
+                    "autograded": false,
+                    "observation": "Correct!"
+                },
+                "7965": {
+                    "result": "failed",
+                    "autograded": false,
+                    "observation": "```\nNot all of the tests passed.\n\n\n************************************************************************\n                         Test Failure Feedback                          \n************************************************************************\n\nFailed Test: Produces good results when running the network on full data\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/grader/first_neural_network/workspace/my_answers.py\", line 53, in train\n    self.update_weights(delta_weights_i_h, delta_weights_h_o, n_records)\n  File \"/home/grader/first_neural_network/workspace/my_answers.py\", line 119, in update_weights\n    self.weights_hidden_to_output += self.lr*delta_weights_h_o/self.n_records\nAttributeError: 'NeuralNetwork' object has no attribute 'n_records'\n\n\n************************************************************************\n                          Test Result Summary                           \n************************************************************************\n\nProduces good results when running the network on full data            E\n\n\n```"
+                },
+                "5570": {
+                    "result": "failed",
+                    "autograded": false,
+                    "observation": "```\nNot all of the tests passed.\n\n\n************************************************************************\n                         Test Failure Feedback                          \n************************************************************************\n\nFailed Test: The weights are updated correctly on training\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/grader/first_neural_network/workspace/my_answers.py\", line 53, in train\n    self.update_weights(delta_weights_i_h, delta_weights_h_o, n_records)\n  File \"/home/grader/first_neural_network/workspace/my_answers.py\", line 119, in update_weights\n    self.weights_hidden_to_output += self.lr*delta_weights_h_o/self.n_records\nAttributeError: 'NeuralNetwork' object has no attribute 'n_records'\n\n\n************************************************************************\n                          Test Result Summary                           \n************************************************************************\n\nThe weights are updated correctly on training                          E\n\n\n```"
+                },
+                "5581": {
+                    "result": "passed",
+                    "autograded": false,
+                    "observation": "Correct!"
+                },
+                "5573": {
+                    "result": "passed",
+                    "autograded": false,
+                    "observation": "Correct!"
+                }
+            }
+        }
+    }
+}
